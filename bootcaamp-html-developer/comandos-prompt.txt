@@ -1,0 +1,9 @@
+Comandos no Prompt
+
+Listar páginas → dir
+Navegar entre páginas (change direct)→ cd/
+Limpar Terminal → cls
+Auto completar → Tab	
+Criar diretório → mkdir	
+Deletar arquivo → del	
+Deletar repositório → rmdir /S /Q
