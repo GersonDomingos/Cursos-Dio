@@ -1,0 +1,85 @@
+SHA é um algorítmo hash seguro – Encriptografia
+
+Encriptar no GitBash → openssl sha1 “arquivo.extensão”
+
+Como cadastrar SSH no GitHub:
+No GitBash→ ssh-keygen -t ed25519 -C e-mail
+Minha senha = ********
+Isso gera uma chave pública e privada.
+Abre-se a pasta criada “cd /C/Users/gerso/.ssh”
+Dois arquivos deverão compor a pasta, uma chavae pública e uma privada.
+Para exibir a chave pública criada digite no GitBash:
+cat id_ed25519
+No site do github, na aba de chaves “Settings & SSH”, adicionar título e a chave.
+Feito isto, no GitBash deverá ser feito o seguinte procedimento:
+Na pasta de chaves:
+“C/Users/”nome da máquina”/.ssh”
+Entrar com o seguinte comando:
+eval $(ssh-agent -s)
+Feito isto, agora tem que passar a chave privada para o GitHub
+Na pasta, digitar no GitBash:
+ssh-add id_ed25519
+
+Usando o git
+Na pasta criada, inicialize o git com o comando git init
+Feito isto, não aparecerá a pasta .git pois estará oculta. Para exibi-la, use a flag -a no ls:
+ls -a
+a pasta .git, dentro da pasta inicializada aparecerá.
+
+Configurando um e-mail e nome para o Git.
+
+No terminal, na pasta utilizada digite:
+git config –-global user.email “Seu e-mail” 
+
+Depois, para um nickname digite:
+git config –-global user.name “Seu nome”. Pronto, já estará atrelado um autor à seus commits.
+
+
+Criando um novo commigt:
+na pasta utilizada digite:
+git add *
+e depois:
+git commit -m “seu titulo ou descrição”
+Um commit será criado..
+
+
+Git Status: Para monitorar os arquivos criados (tracked, untracked, modified ou unmodified)
+git status
+
+Comando para mover arquivo de uma pasta para outra:
+mv “arquivo” ./”pasta alvo”
+
+Comando para criar um arquivo:
+echo > “Nome do arquivo. extensão”
+
+
+Para trocar nickname ou e-mail, primeiro deve-se resetar o já existente:
+git config --global –-unset user.name (para nickname) e,
+git config –-global -–unset user.email (para e-mail).
+
+Então:
+git config –-global user.name “Seu nickName” e,
+git config –-global user.email “Seu e-mail”.
+
+
+Para listar os dados utilizados (metadados)
+git config -–list
+
+Para cadastrar uma URL do GitHub no GitBash
+git remote add origin “Colar a URL do repositório criado no GitHub”.
+Obs: O origin é um apelido, um nome dado ao projeto para o invocar facilmente.
+
+Para listar as URL’s inseridas:
+git remote -v
+
+Para empurrar um commit para o Servidor Remoto:
+git push “Apelido, no caso, origin” master
+Inserir credenciais solicitadas.
+
+Para puxar arquivo do GitHub:
+git pull “origin” master
+
+
+Para clonar repositório de terceiros:
+Copiar o link do repositório a ser clonado e no GitBash:
+git clone “URL origem”.
