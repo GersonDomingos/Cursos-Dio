@@ -1,0 +1,42 @@
+Curso de HTML e CSS
+
+Tags:
+
+Destaque para títulos e conteúdos relevantes: <h1> até <h6>.
+
+Particionamento de conteúdo:
+<header></header> -> Cabeçalho da página ou de outra seção, como section, article ou aside por exemplo.
+<section></section> -> Nova partição dentro do conteúdo.
+<footer></footer> -> Rodapé da página ou de outro conteúdo, como section ou article por exemplo.
+<article></article> -> Conteúdo a ser incluído em outro principal.
+<aside></aside> -> Conteúdo secundário como barra lateral por exemplo.
+
+Tags para textos:
+<p></p> -> Parágrafo para textos mais densos onde os "h's" seriam inviáveis.
+
+Tag para link:
+<a></a> -> (âncora), tag utilizado para interligar conteúdos na web. Pode ser utilizado para redirecionamento de sites, email ou telefone.
+<a href="site.com/pagina">"link a ser exibido"</a>
+<a href="mailto:email@servidor.com">E-mail</a>
+<a href="tel:159XXXXXXXX">Ligue</a>
+
+Para que o link abra em nova aba, deve-se adicionar o target="_blank".
+<a href="link" target="_blank">Nome a ser exibido para link</a>
+
+
+IMAGENS
+
+Tag: <img></img>
+
+<img src="caminho/nome.extensão"></img>
+
+É possível inserir uma descrição alternativa para a imagem, no caso de não carregamento, por exemplo.
+alt="Descrição"
+Exemplo:
+<img src"img/sorriso.jpg" alt="Imagem de uma criança sorrindo"></img>
+
+USO DE LISTAS
+<ul> Para listas onde a ordem não é relevante.
+<ol> Para listas onde a ordem importa.
+<li>
+
