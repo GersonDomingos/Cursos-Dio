@@ -1,0 +1,82 @@
+Para "linkar" e possibilitar a comunicação html/css é preciso inserir o seguinte elemento no head do html:
+<link rel="stylesheet" href="caminho do css">
+
+ID e Classe
+
+<header id="header" class="header"></header>
+
+<header class="header"></header>
+
+
+ESTILIZAÇÃO
+
+PADDING -> Espaçamento entre o conteúdo e a borda;
+
+BORDER -> Espaçamento entre o conteúdo e a margem; 
+ex: 
+border: 3px solid (sólida) #ccc;
+border: 3px dotted (pontilhada) green; e
+border: 3px dashed (tracejada) pink.
+
+MARGIN -> Espaçamento entre o conteúdo e outro elemento externo (ex: margin: 10px solid #000); e
+
+BACKGROUND -> Fundo do elemento.
+ex:
+bacground-color: green
+background-image: url("img/smile.png")
+background-position: top;
+
+BORDER-RADIUS -> Arredondamento das bordas.
+ex:
+border-radius: 10% 20% 25% 30%;
+
+ESTILIZAÇÃO DE TEXTO
+
+Fontes:
+ex:
+
+#title{
+font-family: Verdana;
+}
+
+.post_title {
+font-family: Verdana, Arial;    <-Neste caso, se uma fonte não carregar, terá backup.
+}
+
+Tamanho do texto:
+.class_exemplo{
+font-size: 30px;
+}
+
+Aparência do Texto
+.class_exemplo{
+font-style: normal;
+}
+
+.class_exemplo{
+font-style: italic;
+}
+
+ESTILIZAÇÃO DE LISTA
+
+Para <ul>
+ex:
+list-style-type: square    <-Muda o marcador para um quadrado.
+
+<ol>
+ex:
+list-style-type: upper-roman    <-Muda o marcadaor para algarismos romanos maiúsculos.
+
+<ul>
+ex:
+list-style-type: "/1F44D";
+
+DIMENSÕES E ALINHAMENTOS
+Width -> largura
+Height -> altura
+Margin -> Ajusta margem geral quando aplicada ao  body ex: margin: auto; (centraliza e ocupa o centro da página).
+
+Text align -> Alinha o conteúdo.
+
+
+
