@@ -1,0 +1,20 @@
+FLEX CONTAINER:
+Tag que envolve os intens. Ou seja, se uma tag possui tags filhas ela pode ser inclusa como flex.
+Propriedades Relacionadas:
+display (Define o uso da função flex. "display:flex;")
+flex-direction (Em que direção se extenderá os itens)
+flex-wrap (Quebra de linha)
+flex-flow
+justify-content (Alinhamento e espaçamento de itens no container)
+align-items (Alinhamento das tags filhas)
+align-content
+
+FLEX ITEM:
+flex-grow
+flex-basis
+flex-shrink
+flex
+order
+align-self
+
+
