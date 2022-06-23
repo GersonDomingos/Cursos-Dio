@@ -7,14 +7,16 @@ flex-wrap (Quebra de linha)
 flex-flow
 justify-content (Alinhamento e espaçamento de itens no container)
 align-items (Alinhamento das tags filhas)
-align-content
+align-content (Tratamento do eixo vertical)
 
 FLEX ITEM:
-flex-grow
-flex-basis
-flex-shrink
-flex
-order
-align-self
+flex-grow (Define proporcionalidade de crescimento dos items)
+Utiliza-se apenas números para definir a ordem de grandeza do crescimento.
+
+flex-basis (Estabelece o tamanho inicial antes das distribuições)
+flex-shrink (Estabelece a capacidade de redução ou compressão)
+flex (Atalho - grow, shrink e basis)
+order (Referencia à ordenação dos items)
+align-self (Alinhamento do item individualmente)
 
 
