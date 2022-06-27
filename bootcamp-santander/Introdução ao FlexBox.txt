@@ -4,7 +4,7 @@ Propriedades Relacionadas:
 display (Define o uso da função flex. "display:flex;")
 flex-direction (Em que direção se extenderá os itens)
 flex-wrap (Quebra de linha)
-flex-flow
+flex-flow (Abreviação flex-wrap e flex-direction)
 justify-content (Alinhamento e espaçamento de itens no container)
 align-items (Alinhamento das tags filhas)
 align-content (Tratamento do eixo vertical)
