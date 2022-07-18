@@ -1,0 +1,195 @@
+JavaScrpit
+É uma linguagem interpretada, ou seja, não precisa de uma compilação para se colher os resultados do código no navegador. Isto é feito isntantaneamente.
+
+Variável (var) -> Pode ser reescrita durante a execução do código.
+Constante (const) -> Uma vez declarada, não pode ter seu valor alterado.
+
+Função:
+Primeiramente declara-se, nomeando e passando seus atributos:
+function "name" ( atributos, ... ) {
+função 
+}
+
+Para chamá-la, faz-se uso do nome dado e os parâmetros.
+
+"name" ("parâmetros").
+
+DOM
+Document Object Model.
+
+OPERADORES
+Atribuição:
+=, +=, *=, /=, %=.
+
+Aritméticos:
++,-,*,**,/,%,++,--.
+
+Comparação:
+==, ===, !=, !==,>,<,>=,<=.
+
+Obs: == compara se dois valores são iguais, e
+    === compara para ver se além de iguais, os valores são de mesmo tipo.
+O mesmo vale para != e !==.
+
+Lógicos:
+&& "e" lógico
+|| "ou" lógico	
+! "não" lógico 
+
+Condicionais:
+(condition) ? expression1 : expression2
+Seria o mesmo que,
+if(condition)
+statement;
+else
+statement;
+
+If ternário
+return "variável lógica" ? "string1" : "string2"
+A função confere se é veradeira a declaração e retorna string1 se positiva, caso contrário, string2.
+
+BOAS PRÁTICAS
+Camel Case -> Exemplo: someAesomeVar
+Snake Case -> Exemplo: some_awesome_var
+Kebab Case -> Exemplo: some-awesome-var
+Upper Case Snake Case -> Exemplo: SOME_AWESOME_VAR (Para constantes).
+
+Var e Let
+Valores dinâmicos.
+
+Escopo de bloco.
+Let é declarada apenas dentro do bloco enquanto que var é para todos os blocos.
+
+Hoisting
+Atribuir um valor à uma variável antes de criá-la.
+
+Obs: Constante não permite Hoisting.
+
+Constante não permite redeclarar, reatribuir ou hoisting.
+Var permite qualquer das opções.
+Let não permite redeclarar e hoisting, mas permite reatribuição.
+
+JavaScript é uma linguagem de tipagem dinânmica e fraca.
+
+TIPOS
+Se dividem em dois grandes grupos: Primitivos e Compostos.
+Onde:
+Primitivos (sem métodos e escritos com letra minúscula) = numbers, strings, boolean, null e undefined.
+Compostos: Objetos e arrays.
+
+STRING
+Concatenar dados numa variável string utiliza-se "crase, dolar e chaves". `${}`.
+
+String com letra maiúscula identifica que a variável é um objeto.
+Exemplo: let variavel = new String("variável");
+
+String vazia, utliza-se "" vazia.
+
+SPLIT
+Comando que retorna tudo que há na string.
+Exemplo:
+let frase = "Olá, tudo bem?";
+Se utilizar frase.split(""), retornará todos os caracteres separadamente.
+Se utlizar fras.split(" "), retornará todos os elementos entre espaços.
+
+Includes
+Este comando verifica se um elemento faz parte de uma string.
+Exemplo:
+let frase = "Olá marujo, tudo bem?";
+frase.includes("tudo");
+O retorno será true, pois há o elemento "tudo" na string.
+
+NUMBERS
+São numerais e operadores matemáticos.
+
+
+BOOLEANS
+Verdadeiro ou falso.
+
+ARRAYS (VETORES)
+É uma lista iterável de elementos.
+
+array.push: Adiciona um elemento no fim da array.
+array.pop: Retira um elemento do fim da array.
+array.shift: Retira um elemento do início da array.
+array.unshift: Adiciona um elemento do início da array.
+
+
+OBJETOS
+Estrutura do tipo "chave e valor".
+Estrutura => let person = {
+                 name: "Gerson",
+		     age: 20,
+		     adress: "Rua Renato Chiazzotto" }
+
+EMPTY, NULL AND UNDEFINED
+
+Empty -> A variável é definida mas retorna um valor vazio.
+Null -> A variável definida tem um valor propositalmente inexistente.
+Undefined -> A variável e seu valor não foram definidos.
+
+Comando Join
+Junta todos os elementos de um array numa string.
+
+FUNÇÕES
+Estrutura:
+function nome (parametro){
+	instruções
+}
+
+return
+O return interrompe a função e retorna o valor após ele.
+
+FUNÇÃO ANÔNIMA
+Uma variável pode variar uma função.
+Ex:
+const soma = function (a, b){
+	return a + b;
+}
+soma (1, 2)
+soma (2, 3)
+
+IIFE (Função auto-invocável)
+Ex:
+(
+	function(){
+		let name = "Digital Innovation One"
+		return name;
+}
+)();
+
+CALLBACKS
+Uma função passada como argumento para outra.
+Utilizando callbacks, você tem maior controle da orde de chamadas.
+
+VALORES PADRÃO
+É o valor assumido no caso de o recebido ser inválido.
+
+ARGUMENTS
+Array com todos os parâmetros passados quando a função foi invocada.
+
+ARRAYS
+Spread (...): uma forma de lidar separadamente com elementos.
+O que era parte de um array se torna um elemento independente.
+A técnica spread (...) em vez de enviar um array para a função, manda cada elemento do array separadamente.
+
+Rest: Ao contrário do spread, envia todos os elementos recebidos como um único array.
+
+Object Destructuring
+Entre chaves {}, podemos filtrar apenas os dados que nos interessam em um objeto.
+
+LOOPS
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
